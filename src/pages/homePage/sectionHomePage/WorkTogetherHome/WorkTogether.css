@@ -38,7 +38,7 @@
 }
 
 .contact-us {
-    width: 120px;
+    width: max-content;
     height: 45px;
     margin-top: 10px;
     border-radius: 14px;
@@ -47,7 +47,7 @@
     align-items: center;
     /* background-color: red; */
     background: -webkit-linear-gradient(-27deg, rgb(255, 41, 41) 50%, rgb(103, 0, 0) 100%);
-    padding: 0px 12px;
+    padding: 4px 12px;
     font-weight: 600;
 }
 

@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React from 'react';
 import logo from '../../assets/Secretoflight_logo.png';
 import './footer.css';
 import instagram_icon from '../../assets/images/social-icon/icons8-instagram.svg';
@@ -8,30 +8,18 @@ import { Link } from 'react-router-dom';
 
 function Footer(){
 
-    const [isModalOpen, setIsModalOpen] = useState(false); 
-
-     // Funzione per aprire il modal
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-
-    // Funzione per chiudere il modal
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
-
     return(
         <footer>
             <div className="footer-head">
                 <div className="social-icon">
                     <div className="social-icon-container">
-                        <img src={instagram_icon} alt="" />
+                        <a href='https://www.instagram.com/secretoflight_official/' target='_blank'><img src={instagram_icon} alt="" /></a>
                     </div>
                     <div className="social-icon-container">
-                        <img src={pinterest_icon} alt="" />
+                        <a href='https://www.instagram.com/secretoflight_official/' target='_blank'><img src={pinterest_icon} alt="" /></a>
                     </div>
                     <div className="social-icon-container">
-                        <img src={twitter_icon} alt="" />
+                    <a href='https://www.instagram.com/secretoflight_official/' target='_blank'><img src={twitter_icon} alt="" /></a>
                     </div>
                 </div>
                 <Link to='/'>
@@ -66,33 +54,14 @@ function Footer(){
                 <p className="fiscal-data">Secret of Light S.A.S. di Bosticco R. <br /> P.IVA 10886050011 <a href="mailto:info@secretoflight.it">info@secretoflight.it</a></p>
                 <div className="secondary-info">
                     <p>
-                        <a onClick={openModal}>Privacy Policy</a>
+                    <a href="https://www.iubenda.com/privacy-policy/74486230" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " target='_blank' title="Privacy Policy ">Privacy Policy</a>
+                    </p>
+                    <p>
+                    <a href="https://www.iubenda.com/privacy-policy/74486230/cookie-policy" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " target='_blank' title="Cookie Policy ">Cookie Policy</a>
                     </p>
                     {/* <p><a href="#">Additional Content Information</a></p> */}
                 </div>
             </div>
-
-            {/* Modal */}
-            {isModalOpen && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <span className="close" onClick={closeModal}>&times;</span>
-                        <h2>Privacy Policy</h2>
-                        <h4>Finalità del trattamento:</h4>
-                        <p>I dati personali forniti tramite il modulo di contatto saranno utilizzati esclusivamente per rispondere alle richieste di informazioni da parte dell'utente.</p>
-                        <h4>Dati raccolti:</h4>
-                        <p>Nome, cognome, email e numero di telefono</p>
-                        <h4>Titolare del Trattamento dei Dati:</h4>
-                        <ul>
-                            <li> Secret of Light S.A.S. - Via Lombardore 124,
-                            10040 Leinì TO</li>
-                            <li>Indirizzo email del Titolare:info@secretoflight.it</li>
-                        </ul>
-                        <h4>Diritti dell'utente:</h4>
-                        <p>Gli utenti hanno il diritto di accedere ai propri dati personali, richiedere la correzione o la cancellazione dei dati, e limitare il trattamento dei propri dati inviando una richiesta all'indirizzo email sopra indicato.</p>
-                    </div>
-                </div>
-            )}
 
         </footer>
     )

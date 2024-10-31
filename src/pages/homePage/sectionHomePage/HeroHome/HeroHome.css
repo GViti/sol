@@ -28,8 +28,8 @@
 
 .container-img-intro{
     margin: 0 auto;
-    width: 85%;
-    height: 198px;
+    width: 98%;
+    height: 250px;
 }
 
 .container-img-intro img{
@@ -47,7 +47,7 @@
 
 @media only screen and (min-width: 1024px){
     .container-img-intro{
-        height: 450px;
+        height: 580px;
     }
 
     #slogan{

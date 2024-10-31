@@ -22,17 +22,17 @@ function MenuOpen ({isOpen, setIsOpen}){
                     <li><Link onClick={handleLinkClick} to="/about">Chi<span style={{ color: 'transparent' }}>.</span>siamo</Link></li>
                 </ul>
                 <div className="contact-us menu">
-                    <h3><Link to="/contacts">Contattaci</Link></h3>
+                    <h3><Link onClick={handleLinkClick} to="/contacts">Contattaci</Link></h3>
                 </div>
                 <div className="social-icon menu">
-                    <div className="social-icon-container">
-                        <a href=""><img src={instagram_icon} alt="" /></a>
+                <div className="social-icon-container">
+                        <a href='https://www.instagram.com/secretoflight_official/' target='_blank'><img src={instagram_icon} alt="" /></a>
                     </div>
                     <div className="social-icon-container">
-                        <a href=""><img src={pinterest_icon} alt="" /></a>
+                        <a href='https://www.instagram.com/secretoflight_official/' target='_blank'><img src={pinterest_icon} alt="" /></a>
                     </div>
                     <div className="social-icon-container">
-                        <a href=""><img src={twitter_icon} alt="" /></a>
+                    <a href='https://www.instagram.com/secretoflight_official/' target='_blank'><img src={twitter_icon} alt="" /></a>
                     </div>
                 </div> 
             </div>

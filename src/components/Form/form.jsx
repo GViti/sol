@@ -26,15 +26,6 @@ function FormContatti() {
         e.target.reset();
     };
 
-    // Funzione per aprire il modal
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-
-    // Funzione per chiudere il modal
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
 
     return (
         <section className="contactForm" id='form'>
@@ -58,33 +49,11 @@ function FormContatti() {
                 <div className='inputPrivacy'>
                     <input type="checkbox" name="privacy" required/>
                     <label className="checkbox">
-                        Accetto la <a onClick={openModal}>Privacy Policy</a> e acconsento al trattamento dei miei dati.
+                        Accetto la <a href="https://www.iubenda.com/privacy-policy/74486230" className="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " target='_blank' title="Privacy Policy ">Privacy Policy</a> e acconsento al trattamento dei miei dati.
                     </label>
                 </div>
                 <input type="submit" value="Invia" />
             </form>
-
-            {/* Modal */}
-            {isModalOpen && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <span className="close" onClick={closeModal}>&times;</span>
-                        <h2>Privacy Policy</h2>
-                        <h4>Finalità del trattamento:</h4>
-                        <p>I dati personali forniti tramite il modulo di contatto saranno utilizzati esclusivamente per rispondere alle richieste di informazioni da parte dell'utente.</p>
-                        <h4>Dati raccolti:</h4>
-                        <p>Nome, cognome, email e numero di telefono</p>
-                        <h4>Titolare del Trattamento dei Dati:</h4>
-                        <ul>
-                            <li> Secret of Light S.A.S. - Via Lombardore 124,
-                            10040 Leinì TO</li>
-                            <li>Indirizzo email del Titolare:info@secretoflight.it</li>
-                        </ul>
-                        <h4>Diritti dell'utente:</h4>
-                        <p>Gli utenti hanno il diritto di accedere ai propri dati personali, richiedere la correzione o la cancellazione dei dati, e limitare il trattamento dei propri dati inviando una richiesta all'indirizzo email sopra indicato.</p>
-                    </div>
-                </div>
-            )}
         </section>
     );
 }

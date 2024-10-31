@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+.catalog_page{
+    margin-top: 100px;
+    padding: 50px 5%;
+}
+
+.catalog_page h1{
+    text-align: center;
+}
+
+.brand_catalog{
+    margin: 10px 4px;
+}
+
+.catalog_container{
+    margin: 40px 0;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.divider{
+    height: 1px;
+    width: 60%;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.download_text{
+    font-size: 16px;
+    margin: 10px 4px;
+}
+
+.catalog_image_container{
+    max-width: 340px;
+}
+
+.catalog_image_container img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px){
+    .catalog_container{
+        justify-content: center;
+    }
+}

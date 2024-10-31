@@ -1,6 +1,6 @@
 import React from "react";
 import './HeroHome.css';
-import imgHero from '../../../../assets/images/SUBLI_3.jpg';
+import imgHero from '../../../../assets/images/SUBLI_3.webp';
 
 function HeroHome(){
     return (

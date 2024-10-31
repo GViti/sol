@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './ProjectsHome.css'; // Assuming you have a CSS file for styling
 import { Link } from 'react-router-dom';
-import work1 from '../../../../assets/images/work1.jpg';
-import work2 from '../../../../assets/images/work2.jpg';
-import work3 from '../../../../assets/images/work3.jpg';
+import work1 from '../../../../assets/images/work1.webp';
+import work2 from '../../../../assets/images/work2.webp';
+import work3 from '../../../../assets/images/work3.webp';
 
 
 

@@ -46,7 +46,7 @@ function App() {
             <Route path='/about' element={<AboutPage/>}/>
             <Route path='/contacts' element={<ContactsPage/>}/>
             <Route path='/catalog' element={<CatalogPage/>}/>
-            <Route path='/cookie-policy' element={<CookiePolicy/>}/> {/* Aggiungi il percorso per la Cookie Policy */}
+            {/* <Route path='/cookie-policy' element={<CookiePolicy/>}/>  */}
           </Routes>
           <Footer/>
         </div>
