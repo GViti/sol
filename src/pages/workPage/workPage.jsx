@@ -21,7 +21,7 @@ function WorksPage() {
             
             /* ========== OPTION TWO BELOW ==========*/
             //use the code below if the page had just horizontal scroll
-            // var scrollPercentage = (window.scrollY / maxScroll) * - (100-percentageAdjustment);
+            // const scrollPercentage = (window.scrollY / maxScroll) * - (100-percentageAdjustment);
 
             // Apply transformation to `track`
             track.style.transform = `translate(${scrollPercentage}%, 0%)`;
@@ -37,7 +37,7 @@ function WorksPage() {
         window.addEventListener("scroll", handleScroll);
 
         // Clean up event listener on component unmount
-        return () => window.removeEventListener("scroll", handleScroll);
+        // return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
